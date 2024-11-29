@@ -1,0 +1,1162 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+}
+
+
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #ff4b5c;
+}
+
+
+section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+#about {
+    background-color: #fff;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+#about p {
+    font-size: 1.1em;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+
+#about .card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+#about .card:hover {
+    transform: translateY(-10px);
+}
+
+#about .card h4 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#about .card p {
+    font-size: 1em;
+    color: #555;
+}
+
+
+#services {
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#services h2 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+}
+
+#services p {
+    font-size: 1.1em;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+#services .card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#services .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+#services .card h3 {
+    font-size: 1.8em;
+    margin-bottom: 1em;
+}
+
+#services .card p {
+    font-size: 1em;
+    color: #555;
+}
+
+
+button.cta {
+    background-color: #ff4b5c;
+    color: #fff;
+    font-size: 1.2em;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 30px;
+}
+
+button.cta:hover {
+    background-color: #e44a54;
+}
+
+
+#testimonials {
+    background-color: #fff;
+    text-align: center;
+}
+
+#testimonials blockquote {
+    font-size: 1.2em;
+    color: #666;
+    margin: 30px auto;
+    width: 70%;
+    border-left: 5px solid #ff4b5c;
+    padding-left: 20px;
+}
+
+
+#achievements {
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#achievements h2 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+}
+
+#achievements ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#achievements ul li {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+
+#contact {
+    background-color: #fff;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+}
+
+#contact p {
+    font-size: 1.1em;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 1em;
+}
+
+footer a {
+    color: #ff4b5c;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav a {
+        font-size: 1em;
+        margin: 10px;
+    }
+
+    section {
+        padding: 40px 10px;
+    }
+
+    #about .card, #services .card {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    #about h2, #services h2 {
+        font-size: 2em;
+    }
+
+    footer {
+        font-size: 0.9em;
+    }
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo do site */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container geral da seção */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Cabeçalho e títulos */
+h2, h3 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 2em;
+    margin-top: 40px;
+}
+
+/* Imagem da visão */
+.vision-image {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.vision-image img {
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.vision-image p {
+    font-style: italic;
+    color: #777;
+    margin-top: 10px;
+}
+
+/* Seção de valores */
+.values-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+}
+
+.card h4 {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Seção de Missão */
+.mission {
+    text-align: center;
+    margin-top: 60px;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mission p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Seção de Equipe */
+.team {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.team h3 {
+    margin-bottom: 40px;
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    width: 30%;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.team-member h4 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .values-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+        margin: 10px 0;
+    }
+
+    .team-members {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-member {
+        width: 80%;
+        margin: 20px 0;
+    }
+}
+
+/* Estilos para a seção "Serviços" */
+#services {
+    background-color: #fafafa;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#services h2 {
+    font-size: 2.8em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#services p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+/* Container de todos os serviços */
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+/* Cards dos serviços */
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 25%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.card p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.card ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.card ul li {
+    margin: 5px 0;
+}
+
+.card .service-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Botão de chamada para ação */
+.cta {
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1.2em;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    margin-top: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para FAQ */
+.faq {
+    margin-top: 60px;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq h3 {
+    font-size: 2.2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-item h4 {
+    font-size: 1.5em;
+    color: #007bff;
+    cursor: pointer;
+}
+
+.faq-item p {
+    font-size: 1.1em;
+    color: #555;
+    display: none; /* Initially hidden */
+}
+
+.faq-item.active p {
+    display: block;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .card {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    .cta {
+        padding: 12px 25px;
+        font-size: 1.1em;
+    }
+
+    .faq-item h4 {
+        font-size: 1.2em;
+    }
+}
+
+/* Estilos para a seção de Depoimentos */
+#testimonials {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#testimonials h2 {
+    font-size: 2.8em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#testimonials p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+/* Carrossel de Depoimentos */
+.testimonial-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    overflow: hidden;
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.testimonial-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transform: scale(0.9);
+    opacity: 0.7;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.testimonial-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.testimonial-card blockquote {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.testimonial-card footer {
+    font-size: 1.1em;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Navegação do Carrossel */
+.carousel-nav {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    transform: translateY(-50%);
+}
+
+.carousel-nav button {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 2em;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-nav button:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .testimonial-carousel {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .testimonial-card {
+        width: 80%;
+    }
+
+    .testimonial-img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .carousel-nav button {
+        font-size: 1.5em;
+    }
+}
+
+/* Estilos para a seção de Conquistas */
+#achievements {
+    background-color: #f4f4f4;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#achievements h2 {
+    font-size: 2.8em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#achievements p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+/* Cards de Conquistas */
+.achievement-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.achievement-card {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.achievement-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.achievement-icon {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 20px;
+}
+
+.achievement-card h3 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.achievement-card p {
+    font-size: 1.1em;
+    color: #777;
+    line-height: 1.5;
+}
+
+/* Botão de Chamada para Ação */
+.cta {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 40px;
+}
+
+.cta:hover {
+    background-color: #0056b3;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .achievement-cards {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .achievement-card {
+        width: 80%;
+    }
+
+    .achievement-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .cta {
+        width: 100%;
+    }
+}
+
+/* Estilos para a seção de Contato */
+#contact {
+    background-color: #f4f4f4;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.8em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+/* Informações de Contato */
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.contact-method {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 250px;
+}
+
+.contact-method h3 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-method p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.contact-method a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.contact-method a:hover {
+    text-decoration: underline;
+}
+
+/* Redes sociais */
+.social-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.social-links li {
+    width: 40px;
+    height: 40px;
+}
+
+.social-links img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Formulário de Contato */
+.contact-form {
+    margin-top: 40px;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+.contact-form button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Mapa de Localização */
+.map-container {
+    margin-top: 40px;
+}
+
+.map-container iframe {
+    border-radius: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .contact-info {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .contact-form {
+        width: 90%;
+    }
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    font-size: 1.1em;
+    position: relative;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start; /* Para alinhar as seções no topo */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px; /* Ajustado para maior espaço em dispositivos menores */
+    padding: 10px;
+}
+
+.footer-section p {
+    margin: 10px 0;
+}
+
+.footer-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: #007bff;
+}
+
+/* Estilo para a lista de redes sociais */
+.social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.social-links li {
+    display: inline;
+}
+
+.social-links a {
+    font-size: 1.5em; /* Tamanho maior para ícones de redes sociais */
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #007bff;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+}
+
+/* Estilos para o menu de navegação */
+nav {
+    background-color: #333;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav h1 {
+    color: #fff;
+    font-size: 1.8em;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1em;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Efeito de hover nos links do menu */
+nav a:hover {
+    color: #007bff;
+    transform: scale(1.1);
+}
+
+/* Estilos para o menu de navegação (desktop) */
+nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+/* Estilos para o menu de navegação (mobile) */
+.menu-toggle {
+    display: none;
+    background-color: #333;
+    border: none;
+    padding: 10px;
+    color: #fff;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+/* Menu responsivo */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 20px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    nav ul.active {
+        display: flex;
+        transform: translateY(0);
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+/* Estilo para links no menu responsivo */
+nav ul li a {
+    font-size: 1.2em;
+    color: #fff;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+    border: none;
+    display: block;
+}
+
+/* Efeito de hover no menu responsivo */
+nav ul li a:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Animação de abertura e fechamento do menu */
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-100%);
+    }
+}
